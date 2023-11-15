@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Thi62CNTT12_62130690ModelStoreContainer" CdmEntityContainer="Thi62CNTT12_62130690Entities">
+    <EntitySetMapping Name="DoiTuong">
+      <EntityTypeMapping TypeName="Thi62CNTT12_62130690Model.DoiTuong">
+        <MappingFragment StoreEntitySet="DoiTuong">
+          <ScalarProperty Name="MaDT" ColumnName="MaDT" />
+          <ScalarProperty Name="TenDT" ColumnName="TenDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HocVien">
+      <EntityTypeMapping TypeName="Thi62CNTT12_62130690Model.HocVien">
+        <MappingFragment StoreEntitySet="HocVien">
+          <ScalarProperty Name="MaHV" ColumnName="MaHV" />
+          <ScalarProperty Name="HoSV" ColumnName="HoSV" />
+          <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+          <ScalarProperty Name="Anh" ColumnName="Anh" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="MaDT" ColumnName="MaDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="HocVien_TimKiem" FunctionName="Thi62CNTT12_62130690Model.Store.HocVien_TimKiem" />
+  </EntityContainerMapping>
+</Mapping>

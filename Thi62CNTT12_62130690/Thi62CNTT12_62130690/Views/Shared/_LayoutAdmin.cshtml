@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/StyleAdmin.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/StyleAdmin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style=" padding:0">
+    <div id="menu">
+        <div>
+            @Html.ActionLink("Danh Sách", "../HocVien_62130690/Index", new { @class = "a" }) &nbsp;|&nbsp;
+            @Html.ActionLink("Thêm mới", "../HocVien_62130690/Create", new { @class = "a" })&nbsp;|&nbsp;
+            @Html.ActionLink("Tìm kiếm", "../HocVien_62130690/TimKiem_62130690", new { @class = "a" }) &nbsp;|&nbsp;
+            @Html.ActionLink("Xem chi tiết", "../HocVien_62130690/Details", new { @class = "a" })
+            <hr style="margin-top:0px;" />
+        </div>
+    </div>
+    <div id="content">
+        @RenderBody()
+    </div>
+</body>
+</html>
